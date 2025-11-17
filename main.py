@@ -15,7 +15,7 @@ fig1.show()
 
 st.plotly_chart(fig1, use_container_width = True)
 
-df_brasil_usa_india = df.query('location == "Brazil" or location == "United States of America" or location == "India"')
+df_brasil_usa_india = df.query('location == "BRAZIL" or location == "UNITED STATES" or location == "INDIA"')
 fig2 = px.pie(df_brasil_usa_india, values = 'total_vaccinations', names = 'location', title = 'Total de vacinados no Brasil, USA e Índia')
 fig2.show()
 
